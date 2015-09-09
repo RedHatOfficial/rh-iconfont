@@ -1,0 +1,33 @@
+node_modules/
+bower_components/
+dist/
+lib/
+tmp/
+phantomcss/
+npm-debug.log
+baselines/
+css/
+results/
+vendor/
+composer.lock
+gemfile.lock
+
+# Mac
+.DS_Store
+
+# Vim
+.vimrc
+
+# PHPStorm
+.idea/
+
+#Aptana
+.project
+
+#sass
+.maps.css
+.sass-cache
+__*.scss
+*.css.map
+
+

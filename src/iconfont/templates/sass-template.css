@@ -1,0 +1,76 @@
+/*
+    This file dynamically generates a non-printing Sass partial with path variables, base and glyph extendables.
+
+    It also creates a map of all of the glyph names so that _iconfont.scss can @each through them and create class names for each icon.
+
+    This file generates _rh-iconfont.scss in dist/sass and is imported by sass/component/iconfont/_iconfont.scss to generate @font-face, base font styles and individual icon classes inside of webrh.css
+  */
+
+%web-icon,
+%rh-icon {
+    font-family: '<%= fontFamilyName %>';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+<% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { %>
+%<%= glyphs[glyphIdx] %> {content:"\<%= codepoints[glyphIdx] %>";}
+<% } %>
+
+
+$glyphmap: ( <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { %>
+  <%= glyphs[glyphIdx] %>, <% } %>
+);
+
+
+// Sass mixins to print CSS classes and font-face for icon font
+
+
+@mixin print-rh-iconfont-classes() {
+
+    // extend HTML class for icon base
+    .rh-web-icon:before,
+    .rh-icon:before,
+    .web-icon:before,
+    [class$="web-icon"]:before,
+    [class*="web-icon "]:before,
+    [class^="web-icon"]:before,
+    [class$="rh-web-icon"]:before,
+    [class*="rh-web-icon "]:before,
+    [class^="rh-web-icon"]:before,
+    [class$="rh-icon"]:before,
+    [class*="rh-icon "]:before,
+    [class^="rh-icon"]:before {
+       @extend %web-icon;
+    }
+
+    @each $glyph in $glyphmap {
+        .#{$glyph}:before {
+            @extend %#{$glyph};
+        }
+    }
+}
+
+@mixin print-rh-iconfont-font-face() {
+    @font-face {
+      font-family: '<%= fontFamilyName %>';
+      src: '<%= fontSrc1 %>';
+      src: '<%= fontSrc2 %>';
+      font-weight: normal;
+      font-style: normal;
+    }
+}
+
+@mixin print-rh-iconfont-all() {
+    @include print-rh-iconfont-font-face();
+    @include print-rh-iconfont-classes();
+}
+
+
