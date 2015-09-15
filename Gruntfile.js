@@ -13,6 +13,7 @@ module.exports = function (grunt) {
   require('./grunt_tasks/files.js')(grunt, pkg);
   require('./grunt_tasks/iconfont.js')(grunt, pkg);
   require('./grunt_tasks/sass.js')(grunt, pkg);
+  require('./grunt_tasks/server.js')(grunt, pkg);
 
   grunt.config.merge({
     pkg: grunt.file.readJSON('package.json'),
@@ -24,7 +25,8 @@ module.exports = function (grunt) {
   grunt.registerTask('default', [
     'clean', // files
     'webfont', // iconfont
-    'sass'
+    'sass',
+    'connect'
   ]);
 
 };

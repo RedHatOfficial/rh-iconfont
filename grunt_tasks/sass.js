@@ -5,7 +5,8 @@ module.exports = function (grunt, pkg) {
     // https://github.com/sindresorhus/grunt-sass
     sass: {
       options: {
-        includePaths: ['./dist/']
+        includePaths: ['./dist/'],
+        outputStyle: 'expanded'
       },
       dist: {
         files: [{

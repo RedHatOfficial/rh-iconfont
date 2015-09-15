@@ -12,7 +12,7 @@ module.exports = function (grunt, pkg) {
           createTag: true,
           tagName: '%VERSION%',
           tagMessage: 'Version %VERSION%',
-          push: false,
+          push: true,
           pushTo: 'origin',
           gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d',
           globalReplace: false
@@ -72,7 +72,7 @@ module.exports = function (grunt, pkg) {
 
     grunt.task.run('bump-only:' + releaseType );
     grunt.task.run('shell:bumpCommitDev');
-    //grunt.task.run('shell:bumpPushDev');
+    grunt.task.run('shell:bumpPushDev');
     grunt.task.run('shell:bumpSwitchBranch');
     grunt.task.run('default');
     grunt.task.run('shell:bumpAddDist');
