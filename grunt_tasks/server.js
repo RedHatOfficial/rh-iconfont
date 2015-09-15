@@ -6,8 +6,7 @@ module.exports = function (grunt, pkg) {
       server: {
         options: {
           port: 9001,
-          base: 'dist',
-          keepalive: 'true',
+          base: 'dist'
         }
       }
     }

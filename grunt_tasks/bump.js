@@ -15,7 +15,7 @@ module.exports = function (grunt, pkg) {
           push: true,
           pushTo: 'origin',
           gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d',
-          globalReplace: false
+          globalReplace: true
         }
       },
 
