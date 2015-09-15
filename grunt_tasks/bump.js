@@ -76,8 +76,8 @@ module.exports = function (grunt, pkg) {
     grunt.task.run('shell:bumpSwitchBranch');
     grunt.task.run('default');
     grunt.task.run('shell:bumpAddDist');
-    grunt.task.run('bump-commit');
     grunt.task.run('shell:bumpRemoveTemp');
+    grunt.task.run('bump-commit');
   });
 
 }

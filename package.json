@@ -1,6 +1,6 @@
 {
   "name": "webrh-iconfont",
-  "version": "1.0.0-1",
+  "version": "1.0.0-2",
   "description": "The Red Hat Icon Font",
   "main": "index.js",
   "scripts": {
