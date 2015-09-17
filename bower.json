@@ -1,6 +1,6 @@
 {
   "name": "webrh-iconfont",
-  "version": "1.0.0-3",
+  "version": "1.0.0-4",
   "authors": [
     "Red Hat IT Marketing <it-marketing-tower@redhat.com>"
   ],
@@ -12,6 +12,9 @@
     "bower_components",
     "test",
     "tests",
-    "src"
+    "src",
+    "grunt_tasks",
+    "Gruntfile.js",
+    "package.json"
   ]
 }
