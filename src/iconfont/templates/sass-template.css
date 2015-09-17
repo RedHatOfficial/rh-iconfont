@@ -75,8 +75,8 @@
    &:#{$position} {
         content: map-get(map-get($glyphmap, $name), location);
         @include rh-icon-font-styles;
+        @content;
     }
-    @content;
 }
 
 
