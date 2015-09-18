@@ -37,7 +37,7 @@
        @include _<%= baseClass %>-styles;
     }
 
-    @each $glyph, $data in $glyphmap {
+    @each $glyph, $data in $<%= baseClass %>-glyphmap {
         .#{$glyph}:before {
             content: map-get($data, location);
         }
@@ -66,7 +66,7 @@
 
 @mixin get-<%= baseClass %>($name, $position: 'before') {
    &:#{$position} {
-        content: map-get(map-get($glyphmap, $name), location);
+        content: map-get(map-get($<%= baseClass %>-glyphmap, $name), location);
         @include _<%= baseClass %>-styles;
         @content;
     }
@@ -77,7 +77,7 @@
 
 
 
-$glyphmap:(  <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { %>
+$<%= baseClass %>-glyphmap:(  <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { %>
   <%= glyphs[glyphIdx] %>: ('location': "\<%= codepoints[glyphIdx] %>"),
 
   <% } %>
