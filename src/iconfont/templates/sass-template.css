@@ -66,7 +66,7 @@
 
 @mixin get-<%= baseClass %>($name, $position: 'before') {
    &:#{$position} {
-        content: map-get(map-get($<%= baseClass %>-glyphmap, $name), location);
+        content: map-get(map-get($<%= baseClass %>-glyphmap, <%= baseClass %>-#{$name}), location);
         @include _<%= baseClass %>-styles;
         @content;
     }
