@@ -13,7 +13,7 @@ module.exports = function (grunt, pkg) {
           expand: true,
           cwd: './src/sass/',
           src: ['**/*.scss'],
-          dest: 'dist/assets',
+          dest: 'dist/files',
           ext: '.css'
         }]
       }

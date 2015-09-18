@@ -1,16 +1,26 @@
 {
   "name": "webrh-iconfont",
-  "version": "1.0.0-2",
+  "version": "1.0.0-8",
   "authors": [
     "Red Hat IT Marketing <it-marketing-tower@redhat.com>"
   ],
   "description": "The Red Hat Icon Font",
   "license": "MIT",
+  "private": true,
+  "main": [
+      "assets/_rh-iconfont.scss",
+      "assets/rh-iconfont.css",
+      "assets/rh-iconfont.html"
+    ],
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "src",
+    "grunt_tasks",
+    "Gruntfile.js",
+    "package.json"
   ]
 }

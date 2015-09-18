@@ -1,6 +1,6 @@
 {
   "name": "webrh-iconfont",
-  "version": "1.0.0-2",
+  "version": "1.0.0-8",
   "description": "The Red Hat Icon Font",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,7 @@
     "grunt-contrib-connect": "^0.11.2",
     "grunt-sass": "^1.0.0",
     "grunt-shell": "^1.1.2",
+    "grunt-svgmin": "^2.0.1",
     "grunt-webfont": "^0.5.4",
     "load-grunt-tasks": "^3.2.0"
   }
