@@ -16,7 +16,7 @@ module.exports = function (grunt, pkg) {
       dist: {
         expand: true,
         cwd: 'src/iconfont',
-        src: ['vectors/*'],
+        src: ['vectors/**/*.svg'],
         dest: 'dist/svg',
         flatten: true,
       }

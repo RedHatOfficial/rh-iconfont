@@ -1,17 +1,17 @@
-/* rh-iconfont v 1.0.0-6  */
+/* <%= baseClass %> v 1.0.0-6  */
 
 
-// To import into your build system, @include dist/assets/rh-iconfont
+// To import into your build system, @include dist/assets/<%= baseClass %>font
 // The following 3 mixins are availabe to you
-//    @mixin print-rh-iconfont-font-face()
+//    @mixin print-<%= baseClass %>-font-face()
 //      This mixin prints the @font-face with relative paths of "../fonts/"
-//    @mixin print-rh-iconfont-classes()
+//    @mixin print-<%= baseClass %>-classes()
 //      This mixin prints all of the CSS classes needed to apply icons with class names
-//    @mixin print-rh-iconfont-all()
+//    @mixin print-<%= baseClass %>-all()
 //      This mixin prints both of the previous mixins
 
 
-@mixin rh-icon-font-styles {
+@mixin _<%= baseClass %>-styles {
     font-family: '<%= fontFamilyName %>';
     speak: none;
     font-style: normal;
@@ -26,22 +26,15 @@
 // Sass mixins to print CSS classes and font-face for icon font
 
 
-@mixin print-rh-iconfont-classes() {
+@mixin print-<%= baseClass %>-classes() {
 
     // extend HTML class for icon base
-    .rh-web-icon:before,
-    .rh-icon:before,
-    .web-icon:before,
-    [class$="web-icon"]:before,
-    [class*="web-icon "]:before,
-    [class^="web-icon"]:before,
-    [class$="rh-web-icon"]:before,
-    [class*="rh-web-icon "]:before,
-    [class^="rh-web-icon"]:before,
-    [class$="rh-icon"]:before,
-    [class*="rh-icon "]:before,
-    [class^="rh-icon"]:before {
-       @include rh-icon-font-styles;
+    .<%= baseClass %>:before,
+    [class$="<%= baseClass %>"]:before,
+    [class*="<%= baseClass %> "]:before,
+    [class^="<%= baseClass %>"]:before,
+    {
+       @include _<%= baseClass %>-styles;
     }
 
     @each $glyph, $data in $glyphmap {
@@ -51,7 +44,7 @@
     }
 }
 
-@mixin print-rh-iconfont-font-face() {
+@mixin print-<%= baseClass %>-font-face() {
     @font-face {
       font-family: '<%= fontFamilyName %>';
       src: <%= fontSrc1 %>;
@@ -63,9 +56,9 @@
 
 // Combo Mixin to print above 2
 
-@mixin print-rh-iconfont-all() {
-    @include print-rh-iconfont-font-face();
-    @include print-rh-iconfont-classes();
+@mixin print-<%= baseClass %>-all() {
+    @include print-<%= baseClass %>-font-face();
+    @include print-<%= baseClass %>-classes();
 }
 
 
@@ -74,7 +67,7 @@
 @mixin get-icon($name, $position: 'before') {
    &:#{$position} {
         content: map-get(map-get($glyphmap, $name), location);
-        @include rh-icon-font-styles;
+        @include _<%= baseClass %>-styles;
         @content;
     }
 }
