@@ -25,8 +25,8 @@ module.exports = function (grunt) {
   grunt.registerTask('default', [
     'clean', // files
     'webfont', // iconfont
-    'sass',
-    'connect'
+    'svgmin', // files
+    'sass' // sass
   ]);
 
 };

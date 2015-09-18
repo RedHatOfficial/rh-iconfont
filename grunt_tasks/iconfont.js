@@ -3,9 +3,9 @@ module.exports = function (grunt, pkg) {
 
     webfont: {
       icons: {
-        src: 'src/iconfont/vectors/*.svg',
+        src: 'src/iconfont/vectors/**/*.svg',
         dest: 'dist/fonts',
-        destCss: 'dist/assets/',
+        destCss: 'dist/files/',
         options: {
           fontFilename: 'icons-{hash}',
           relativeFontPath: '../fonts',
@@ -14,7 +14,7 @@ module.exports = function (grunt, pkg) {
           template: 'src/iconfont/templates/sass-template.css',
           htmlDemo: true,
           htmlDemoTemplate: 'src/iconfont/templates/html-template.html',
-          destHtml: 'dist/assets',
+          destHtml: 'dist/files',
           templateOptions: {
             "fontFamilyName": "rh-iconfont",
             "baseClass": "",
