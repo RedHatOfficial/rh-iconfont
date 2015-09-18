@@ -64,7 +64,7 @@
 
 // Mixin for applying an icon to the before or after pseudo element of your selector
 
-@mixin get-icon($name, $position: 'before') {
+@mixin get-<%= baseClass %>($name, $position: 'before') {
    &:#{$position} {
         content: map-get(map-get($glyphmap, $name), location);
         @include _<%= baseClass %>-styles;
