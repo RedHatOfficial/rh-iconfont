@@ -29,7 +29,7 @@ module.exports = function (grunt, pkg) {
         command: 'git push origin HEAD'
       },
       bumpSwitchBranch: {
-        command: 'git branch -D temp --force && git checkout -b temp'
+        command: 'git checkout -b temp'
       },
       bumpAddDist: {
         command: 'git add dist -f'
