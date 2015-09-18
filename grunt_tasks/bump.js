@@ -12,7 +12,7 @@ module.exports = function (grunt, pkg) {
           createTag: true,
           tagName: '%VERSION%',
           tagMessage: 'Version %VERSION%',
-          push: true,
+          push: 'tag',
           pushTo: 'origin',
           gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d',
           globalReplace: true
@@ -29,7 +29,7 @@ module.exports = function (grunt, pkg) {
         command: 'git push origin HEAD'
       },
       bumpSwitchBranch: {
-        command: 'git checkout -b temp'
+        command: 'git branch -D temp --force && git checkout -b temp'
       },
       bumpAddDist: {
         command: 'git add dist -f'
