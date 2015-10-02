@@ -18,7 +18,7 @@ module.exports = function (grunt, pkg) {
           templateOptions: {
             "fontFamilyName": "rh-iconfont",
             "baseClass": "rh-icon",
-            "mixinPrefix": ""
+            "pathFromDist": "fonts/rh_icon/rh-iconfont"
           }
         }
       },
@@ -27,7 +27,7 @@ module.exports = function (grunt, pkg) {
         dest: 'dist/fonts/web_icon',
         destCss: 'dist/files/',
         options: {
-          fontFilename: 'rh-web-icon-{hash}',
+          fontFilename: 'rh-web-iconfont-{hash}',
           relativeFontPath: '../fonts/web_icon',
           font: 'web-iconfont',
           stylesheet: 'scss',
@@ -38,7 +38,7 @@ module.exports = function (grunt, pkg) {
           templateOptions: {
             "fontFamilyName": "rh-web-iconfont",
             "baseClass": "web-icon",
-            "mixinPrefix": ""
+            "pathFromDist": "fonts/web_icon/rh-web-iconfont"
           }
         }
       }

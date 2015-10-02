@@ -44,11 +44,13 @@
     }
 }
 
-@mixin print-<%= baseClass %>-font-face() {
+@mixin print-<%= baseClass %>-font-face($path_to_dist: '../') {
     @font-face {
       font-family: '<%= fontFamilyName %>';
-      src: <%= fontSrc1 %>;
-      src: <%= fontSrc2 %>;
+      src: url("#{$path_to_dist}<%= pathFromDist %>-<%= hash %>.eot?");
+      src: url("#{$path_to_dist}<%= pathFromDist %>-<%= hash %>.eot?#iefix") format("embedded-opentype"),
+           url("#{$path_to_dist}<%= pathFromDist %>-<%= hash %>.woff?") format("woff"),
+           url("#{$path_to_dist}<%= pathFromDist %>-<%= hash %>.ttf?") format("truetype");
       font-weight: normal;
       font-style: normal;
     }
@@ -56,8 +58,8 @@
 
 // Combo Mixin to print above 2
 
-@mixin print-<%= baseClass %>-all() {
-    @include print-<%= baseClass %>-font-face();
+@mixin print-<%= baseClass %>-all($path_to_dist: '../') {
+    @include print-<%= baseClass %>-font-face($path_to_dist);
     @include print-<%= baseClass %>-classes();
 }
 
