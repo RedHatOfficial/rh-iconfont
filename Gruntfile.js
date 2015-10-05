@@ -29,4 +29,12 @@ module.exports = function (grunt) {
     'sass' // sass
   ]);
 
+  grunt.registerTask('preview', [
+    'clean', // files
+    'webfont', // iconfont
+    'svgmin', // files
+    'sass', // sass
+    'connect'
+  ]);
+
 };
