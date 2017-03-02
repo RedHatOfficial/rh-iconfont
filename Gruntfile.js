@@ -29,7 +29,7 @@ module.exports = function (grunt) {
     'sass' // sass
   ]);
 
-  grunt.registerTask('preview', [
+  grunt.registerTask('watcher', [
     'clean', // files
     'webfont', // iconfont
     'svgmin', // files
