@@ -1,4 +1,4 @@
-#Welcome to the redhat.com font library!
+# Welcome to the redhat.com font library!
 
 
 ## Development 
@@ -26,21 +26,43 @@
 ## Using these icons in your project
 
 ### Importing the iconfont
-* Use bower or a similar tool to pull in a tagged release of this project:
 
-```
-{
-    "name": "your-project",
-    "dependencies": {
-        "rh-iconfont": "git@gitlab.it-mkt.corpdev.redhat.com:it-marketing/rh-iconfont.git#1.0.0-16"
-    },
-}
-```
+* Use bower or a similar tool to pull in a tagged release of this project:
+	
+	```
+	{
+	    "name": "your-project",
+	    "dependencies": {
+	        "rh-iconfont": "git@gitlab.it-mkt.corpdev.redhat.com:it-marketing/rh-iconfont.git#1.0.0-16"
+	    },
+	}
+	```
 
 * If bower is pulling in a cached version of the font, run `./node_modules/.bin/bower cache clean` to clear the cache.
 
+#### If you are using Sass
+
+* Add the `bower_components` directory to your list of included paths, if you haven't already.
+
+	```
+	module.exports = function ( grunt, pkg, paths ) {
+	    grunt.config.merge( {
+	        // https://github.com/sindresorhus/grunt-sass
+	        sass: {
+	            options: {
+	                includePaths: [ "./bower_components" ]
+	            },
+	```
+
+* Add an @import reference to the icon font sass file(s) in your root sass file.
+
+	```
+	@import "rh-iconfont/dist/files/web-iconfont.scss";
+	@import "rh-iconfont/dist/files/rh-iconfont.scss";
+	```
+
 <br/>
-### Using the icons
+### Implementation
 
 #### *Important! Avoid using icon unicode values directly.*
 
