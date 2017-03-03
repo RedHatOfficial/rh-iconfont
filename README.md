@@ -9,15 +9,15 @@
 
 1. Drop the SVGs into the `src/iconfont/vectors/rh_icon` folder or the `src/iconfont/vectors/web_icon` folder.
 2. Run `grunt` to update the font, or `grunt watcher` to update and preview.
-    - Note: the files are parsed alphabetically, so if you add new icons somewhere besides the bottom of the list, they will cause unicode values to change on existing icons.
+    - Note: the SVG files are parsed alphabetically, so if you add new icons somewhere besides the bottom of the list, they will cause unicode values to change on existing icons that are alphabetically lower in the list.
 
 
 ## Creating a tag
 
-*  git checkout master && latest && git checkout -b temp && grunt && git add dist -f
-*  git commit -m "rh-iconfont 1.0.0--X release"
-*  git tag 1.0.0--X && git push origin 1.0.0--X
-*  git checkout master && latest && git branch -D temp
+*  `git checkout master && latest && git checkout -b temp && grunt && git add dist -f`
+*  `git commit -m "rh-iconfont 1.0.0--X release"`
+*  `git tag 1.0.0--X && git push origin 1.0.0--X`
+*  `git checkout master && latest && git branch -D temp`
 
 
 ## Using these icons in your project
