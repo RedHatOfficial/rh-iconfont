@@ -21,6 +21,7 @@
 
 ## Using these icons in your project
 
+### Importing the iconfont
 * Use bower or a similar tool to pull in a tagged release of this project:
 
 ```
@@ -33,3 +34,31 @@
 ```
 
 * If bower is pulling in a cached version of the font, run `./node_modules/.bin/bower cache clean` to clear the cache.
+
+### Utilizing the icons
+
+* SUPER IMPORTANT:
+    * You should always 
+
+YES: Use the get-rh-icon mixin!
+
+```
+@mixin get-rh-icon($name, $position: 'before') {
+   &:#{$position} {
+        content: map-get(map-get($rh-icon-glyphmap, rh-icon-#{$name}), location);
+        @include _rh-icon-styles;
+        @content;
+    }
+}
+```
+```
+.my-fancy-quote-style{
+    @include get-web-icon(open-quote) {
+        color: color(brand-primary);
+        float: left;
+    }
+}
+```
+
+NO: calling icons my their unicode values directly. Why? Because each time the font is updated, these values can change. 
+    quotes: '\201C' '\201D' '\201C' '\201D';
