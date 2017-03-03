@@ -9,6 +9,7 @@
 
 1. Drop the SVGs into the `src/iconfont/vectors/rh_icon` folder or the `src/iconfont/vectors/web_icon` folder.
 2. Run `grunt` to update the font, or `grunt watcher` to update and preview.
+    - Note: the files are parsed alphabetically, so if you add new icons somewhere besides the bottom of the list, they will cause unicode values to change on existing icons.
 
 
 ## Creating a tag
@@ -35,14 +36,25 @@
 
 * If bower is pulling in a cached version of the font, run `./node_modules/.bin/bower cache clean` to clear the cache.
 
-### Utilizing the icons
+### Using the icons
 
-* SUPER IMPORTANT:
-    * You should always 
+####Important! Avoid using icon unicode values directly. 
 
-YES: Use the get-rh-icon mixin!
+You should always utilize these icons by calling the pre-existing css classes, or by using the included sass mixin, never by the unicode characters directly. 
+
+Why? Because each time the font is updated, these values can change. 
+
+``` 
+// Don't do this:
+blockquote p { 
+    quotes: '\201C' '\201D' '\201C' '\201D';
+}
+```
+
+#### Method 1: Use the get-rh-icon mixin in Sass!
 
 ```
+// This icon font comes with this mixin:
 @mixin get-rh-icon($name, $position: 'before') {
    &:#{$position} {
         content: map-get(map-get($rh-icon-glyphmap, rh-icon-#{$name}), location);
@@ -50,15 +62,18 @@ YES: Use the get-rh-icon mixin!
         @content;
     }
 }
-```
-```
+
+// Use it in your sass like this:
 .my-fancy-quote-style{
-    @include get-web-icon(open-quote) {
-        color: color(brand-primary);
-        float: left;
+    @include get-web-icon(open-quote) {  // this calls the "open-quote" icon
+        color: color(brand-primary); // set the color of the icon
+        float: left; // add additional styles as needed
     }
 }
 ```
+#### Method 2: Use the class name in your markup
 
-NO: calling icons my their unicode values directly. Why? Because each time the font is updated, these values can change. 
-    quotes: '\201C' '\201D' '\201C' '\201D';
+```
+<p class="my-fancy-class web-icon-open-quote">To be, or not to be...</p>
+```
+
