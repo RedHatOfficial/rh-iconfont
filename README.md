@@ -1,7 +1,7 @@
 # Welcome to the redhat.com font library!
 
 
-## Development 
+## Development
 
 ### Setup
 
@@ -28,7 +28,7 @@
 ### Importing the iconfont
 
 * Use bower or a similar tool to pull in a tagged release of this project:
-	
+
 	```
 	{
 	    "name": "your-project",
@@ -66,21 +66,21 @@
 
 #### *Important! Avoid using icon unicode values directly.*
 
-You should always utilize these icons by calling the pre-existing css classes, or by using the included sass mixin, never by the unicode characters directly. 
+You should always utilize these icons by calling the pre-existing css classes, or by using the included sass mixin, never by the unicode characters directly.
 
-Why? Because each time the font is updated, these values can change. 
+Why? Because each time the font is updated, these values can change.
 
-``` 
+```
 // Don't do this:
-blockquote p { 
-    quotes: '\201C' '\201D' '\201C' '\201D';
+blockquote p:after {
+    content: '\f102`;
 }
 ```
 
 #### Method 1: Use the get-rh-icon mixin in Sass!
 
 ```
-// This icon font comes with this mixin:
+// rh-iconfont mixin:
 @mixin get-rh-icon($name, $position: 'before') {
    &:#{$position} {
         content: map-get(map-get($rh-icon-glyphmap, rh-icon-#{$name}), location);
@@ -88,10 +88,25 @@ blockquote p {
         @content;
     }
 }
+// web-iconfont mixin:
+@mixin get-web-icon($name, $position: 'before') {
+   &:#{$position} {
+        content: map-get(map-get($web-icon-glyphmap, web-icon-#{$name}), location);
+        @include _web-icon-styles;
+        @content;
+    }
+}
 
 // Use it in your sass like this:
-.my-fancy-quote-style{
-    @include get-web-icon(open-quote) {  // this calls the "open-quote" icon
+.my-fancy-class {
+    @include get-rh-icon(open-quote) {  // this calls the "open-quote" icon from the rh-iconfont
+        color: color(brand-primary); // set the color of the icon
+        float: left; // add additional styles as needed
+    }
+}
+OR
+.my-fancy-class {
+    @include get-web-icon(web-icon-caret-left) {  // this calls the "caret left" icon from the web-iconfont
         color: color(brand-primary); // set the color of the icon
         float: left; // add additional styles as needed
     }
