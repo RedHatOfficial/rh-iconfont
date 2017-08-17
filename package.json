@@ -1,26 +1,26 @@
 {
-  "name": "webrh-iconfont",
-  "version": "1.0.0",
-  "description": "The Red Hat Icon Font",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://gitlab.it-mkt.corpdev.redhat.com/it-marketing/rh-iconfont"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-bump": "^0.5.0",
-    "grunt-contrib-clean": "^0.6.0",
-    "grunt-contrib-connect": "^0.11.2",
-    "grunt-sass": "^1.0.0",
-    "grunt-shell": "^1.1.2",
-    "grunt-svgmin": "^2.0.1",
-    "grunt-webfont": "^0.5.4",
-    "load-grunt-tasks": "^3.2.0"
-  }
+	"name": "webrh-iconfont",
+	"version": "1.1.0",
+	"description": "The Red Hat Icon Font",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://gitlab.it-mkt.corpdev.redhat.com/it-marketing/rh-iconfont"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"grunt": "^0.4.5",
+		"grunt-bump": "^0.5.0",
+		"grunt-contrib-clean": "^0.6.0",
+		"grunt-contrib-connect": "^0.11.2",
+		"grunt-sass": "^1.2.1",
+		"grunt-shell": "^1.3.1",
+		"grunt-svgmin": "^2.0.1",
+		"grunt-webfont": "^0.5.4",
+		"load-grunt-tasks": "^3.5.2"
+	}
 }
