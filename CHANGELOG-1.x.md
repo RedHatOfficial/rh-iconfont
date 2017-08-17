@@ -2,7 +2,7 @@
 
 Tag: [1.1.0](https://gitlab.it-mkt.corpdev.redhat.com/it-marketing/rh-iconfont/tags/1.1.0)
 
-- [CPFED-392]() 
+- [CPFED-392](https://projects.engineering.redhat.com/projects/CPFED/issues/CPFED-392) 
   	- removing fast-jet icon's gradient BG
 	- centering various poorly centered SVGs on a circle, like: clock, laptop, monitor, paper, scalable, warning, etc.
 	- resizing government, lab, insurance, container icons since it was several times larger than the .44in square canvas size (7.11in to be exact).
