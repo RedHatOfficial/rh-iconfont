@@ -1,0 +1,220 @@
+// web-icon v 1.0.0-6
+
+
+// To import into your build system, @include dist/assets/web-iconfont
+// The following 3 mixins are availabe to you
+//    @mixin print-web-icon-font-face()
+//      This mixin prints the @font-face with relative paths of "../fonts/"
+//    @mixin print-web-icon-classes()
+//      This mixin prints all of the CSS classes needed to apply icons with class names
+//    @mixin print-web-icon-all()
+//      This mixin prints both of the previous mixins
+
+
+@mixin _web-icon-styles {
+    font-family: 'rh-web-iconfont';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// Sass mixins to print CSS classes and font-face for icon font
+
+
+@mixin print-web-icon-classes() {
+
+    // extend HTML class for icon base
+    .web-icon:before,
+    [class$="web-icon"]:before,
+    [class*="web-icon "]:before,
+    [class^="web-icon"]:before,
+    {
+       @include _web-icon-styles;
+    }
+
+    @each $glyph, $data in $web-icon-glyphmap {
+        .#{$glyph}:before {
+            content: map-get($data, location);
+        }
+    }
+}
+
+@mixin print-web-icon-font-face($path_to_dist: '../') {
+    @font-face {
+      font-family: 'rh-web-iconfont';
+      src: url("#{$path_to_dist}fonts/web_icon/rh-web-iconfont-df103f8bb39036187546a7677ca07be6.eot?");
+      src: url("#{$path_to_dist}fonts/web_icon/rh-web-iconfont-df103f8bb39036187546a7677ca07be6.eot?#iefix") format("embedded-opentype"),
+           url("#{$path_to_dist}fonts/web_icon/rh-web-iconfont-df103f8bb39036187546a7677ca07be6.woff?") format("woff"),
+           url("#{$path_to_dist}fonts/web_icon/rh-web-iconfont-df103f8bb39036187546a7677ca07be6.ttf?") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+}
+
+// Combo Mixin to print above 2
+
+@mixin print-web-icon-all($path_to_dist: '../') {
+    @include print-web-icon-font-face($path_to_dist);
+    @include print-web-icon-classes();
+}
+
+
+// Mixin for applying an icon to the before or after pseudo element of your selector
+
+@mixin get-web-icon($name, $position: 'before') {
+   &:#{$position} {
+        content: map-get(map-get($web-icon-glyphmap, web-icon-#{$name}), location);
+        @include _web-icon-styles;
+        @content;
+    }
+}
+
+
+
+
+
+
+$web-icon-glyphmap:(  
+  web-icon-call: ('location': "\f101"),
+
+  
+  web-icon-caret-down: ('location': "\f102"),
+
+  
+  web-icon-caret-left: ('location': "\f103"),
+
+  
+  web-icon-caret-right: ('location': "\f104"),
+
+  
+  web-icon-caret-up: ('location': "\f105"),
+
+  
+  web-icon-cart: ('location': "\f106"),
+
+  
+  web-icon-check: ('location': "\f107"),
+
+  
+  web-icon-chevron: ('location': "\f108"),
+
+  
+  web-icon-close: ('location': "\f109"),
+
+  
+  web-icon-contact: ('location': "\f10a"),
+
+  
+  web-icon-contact2: ('location': "\f10b"),
+
+  
+  web-icon-copy: ('location': "\f10c"),
+
+  
+  web-icon-dashboard: ('location': "\f10d"),
+
+  
+  web-icon-envelope: ('location': "\f10e"),
+
+  
+  web-icon-facebook: ('location': "\f10f"),
+
+  
+  web-icon-fax: ('location': "\f110"),
+
+  
+  web-icon-globe: ('location': "\f111"),
+
+  
+  web-icon-gplus: ('location': "\f112"),
+
+  
+  web-icon-grid: ('location': "\f113"),
+
+  
+  web-icon-key: ('location': "\f114"),
+
+  
+  web-icon-laptop: ('location': "\f115"),
+
+  
+  web-icon-link: ('location': "\f116"),
+
+  
+  web-icon-linkedin: ('location': "\f117"),
+
+  
+  web-icon-list-form: ('location': "\f118"),
+
+  
+  web-icon-list: ('location': "\f119"),
+
+  
+  web-icon-mobile-menu: ('location': "\f11a"),
+
+  
+  web-icon-new-window: ('location': "\f11b"),
+
+  
+  web-icon-open-quote: ('location': "\f11c"),
+
+  
+  web-icon-open: ('location': "\f11d"),
+
+  
+  web-icon-plus: ('location': "\f11e"),
+
+  
+  web-icon-print: ('location': "\f11f"),
+
+  
+  web-icon-reddit: ('location': "\f120"),
+
+  
+  web-icon-rss: ('location': "\f121"),
+
+  
+  web-icon-search: ('location': "\f122"),
+
+  
+  web-icon-tumblr: ('location': "\f123"),
+
+  
+  web-icon-twitter: ('location': "\f124"),
+
+  
+  web-icon-upload: ('location': "\f125"),
+
+  
+  web-icon-user: ('location': "\f126"),
+
+  
+  web-icon-youtube: ('location': "\f127"),
+
+  
+  web-icon-youtube2: ('location': "\f128"),
+
+  
+  web-icon-zcaret-thin-down: ('location': "\f129"),
+
+  
+  web-icon-zcaret-thin-left: ('location': "\f12a"),
+
+  
+  web-icon-zcaret-thin-right: ('location': "\f12b"),
+
+  
+  web-icon-zcaret-thin-up: ('location': "\f12c"),
+
+  
+);
+
+
+
+
+
