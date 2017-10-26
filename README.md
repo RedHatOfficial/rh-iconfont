@@ -27,13 +27,13 @@
 
 ### Importing the iconfont
 
-* Use bower or a similar tool to pull in a tagged release of this project:
+* Use bower or a similar tool to pull in a *specific* tagged release of this project. Please do not use loose versioning (example: `~` or `^`), instead, use bower to load a tag that will not automatically upgrade.
 
 	```
 	{
 	    "name": "your-project",
 	    "dependencies": {
-	        "rh-iconfont": "git@gitlab.it-mkt.corpdev.redhat.com:it-marketing/rh-iconfont.git#1.0.0-16"
+	        "rh-iconfont": "git@gitlab.it-mkt.corpdev.redhat.com:it-marketing/rh-iconfont.git#1.1.0"
 	    },
 	}
 	```
