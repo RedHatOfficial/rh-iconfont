@@ -1,3 +1,7 @@
+## 1.1.2 (2018-01-16)
+Tag: [1.1.2](https://gitlab.it-mkt.corpdev.redhat.com/it-marketing/rh-iconfont/tags/1.1.2)
+ - Allow for fuzzy attribute selectors in CSS
+
 ## 1.1.1 (2018-01-04)
 Tag: [1.1.1](https://gitlab.it-mkt.corpdev.redhat.com/it-marketing/rh-iconfont/tags/1.1.1)
  - Add rh-icon-media-clapboard and rh-icon-software-container

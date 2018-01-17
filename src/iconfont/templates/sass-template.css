@@ -31,7 +31,7 @@
     // extend HTML class for icon base
     .<%= baseClass %>:before,
     [class$="<%= baseClass %>"]:before,
-    [class*="<%= baseClass %> "]:before,
+    [class*="<%= baseClass %>"]:before,
     [class^="<%= baseClass %>"]:before,
     {
        @include _<%= baseClass %>-styles;
