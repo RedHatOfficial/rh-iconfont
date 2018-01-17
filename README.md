@@ -19,7 +19,7 @@
 
 ### Creating a tag
 
-*  `git checkout master && latest && git checkout -b temp && grunt && git add dist -f`
+*  `git checkout master && git fetch origin && git pull origin && git checkout -b temp && grunt && git add dist -f`
 *  `git commit -m "rh-iconfont 1.0.0--X release"`
 *  `git tag 1.0.0--X && git push origin 1.0.0--X`
 *  `git checkout master && latest && git branch -D temp`
