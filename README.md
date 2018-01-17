@@ -10,7 +10,9 @@
 
 ### Adding new icons to the icon fonts
 
-1. Drop the SVGs into the `src/iconfont/vectors/rh_icon` folder or the `src/iconfont/vectors/web_icon` folder.
+1. Drop the SVGs into one of the vector folders.
+    - Icons specific to red hat concepts should have a `rh-` prefix and belong in the `src/iconfont/vectors/rh_icon` folder 
+    - Universal web interface icons need a `web-` prefix and belong in the `src/iconfont/vectors/web_icon` folder.
 2. Run `grunt` to update the font, or `grunt watcher` to update and preview.
     - Note: the SVG files are parsed alphabetically, so if you add new icons somewhere besides the bottom of the list, they will cause unicode values to change on existing icons that are alphabetically lower in the list.
 
@@ -27,13 +29,13 @@
 
 ### Importing the iconfont
 
-* Use bower or a similar tool to pull in a tagged release of this project:
+* Use bower or a similar tool to pull in a *specific* tagged release of this project. Please do not use loose versioning (example: `~` or `^`), instead, use bower to load a tag that will not automatically upgrade.
 
 	```
 	{
 	    "name": "your-project",
 	    "dependencies": {
-	        "rh-iconfont": "git@gitlab.it-mkt.corpdev.redhat.com:it-marketing/rh-iconfont.git#1.0.0-16"
+	        "rh-iconfont": "git@gitlab.it-mkt.corpdev.redhat.com:it-marketing/rh-iconfont.git#1.1.0"
 	    },
 	}
 	```
