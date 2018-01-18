@@ -1,5 +1,9 @@
+## 1.2.1 (2018-01-17)
+Tag: [1.2.1](https://gitlab.it-mkt.corpdev.redhat.com/it-marketing/rh-iconfont/tags/1.2.1)
+ - CPFED-1811: Fixing missed, poorly constructed icons.
+
 ## 1.2.0 (2018-01-17)
-Tag: [1.1.1](https://gitlab.it-mkt.corpdev.redhat.com/it-marketing/rh-iconfont/tags/1.2.0)
+Tag: [1.2.0](https://gitlab.it-mkt.corpdev.redhat.com/it-marketing/rh-iconfont/tags/1.2.0)
  - CPFED-1472: Adding 60 new icons, cleaning up older icons for better consistency.
 
 ## 1.1.2 (2018-01-16)
