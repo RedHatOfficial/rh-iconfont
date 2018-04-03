@@ -1,3 +1,7 @@
+## 1.3.0 (2018-04-03)
+Tag: [1.3.0](https://gitlab.it-mkt.corpdev.redhat.com/it-marketing/rh-iconfont/tags/1.3.0)
+ - Adding new info-alt icon
+
 ## 1.2.1 (2018-01-17)
 Tag: [1.2.1](https://gitlab.it-mkt.corpdev.redhat.com/it-marketing/rh-iconfont/tags/1.2.1)
  - CPFED-1811: Fixing missed, poorly constructed icons.
