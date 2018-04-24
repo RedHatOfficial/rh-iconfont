@@ -10,7 +10,9 @@
 		"type": "git",
 		"url": "git+https://gitlab.it-mkt.corpdev.redhat.com/it-marketing/rh-iconfont.git"
 	},
-	"author": "Red Hat",
+	"authors": [
+    "Red Hat IT Marketing <it-marketing-tower@redhat.com>"
+  ],
 	"license": "ISC",
 	"devDependencies": {
 		"grunt": "^0.4.5",
