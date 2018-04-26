@@ -1,3 +1,7 @@
+## 1.3.1 (2018-04-24)
+Tag: [1.3.1](https://gitlab.it-mkt.corpdev.redhat.com/it-marketing/rh-iconfont/tags/1.3.1)
+ - Correct package.json project name and update versions
+
 ## 1.3.0 (2018-04-03)
 Tag: [1.3.0](https://gitlab.it-mkt.corpdev.redhat.com/it-marketing/rh-iconfont/tags/1.3.0)
  - Adding new info-alt icon
