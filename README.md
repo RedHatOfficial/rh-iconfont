@@ -9,8 +9,8 @@
 
 ### Viewing the icons
 Click on an SVG to preview it:
-- [RH-Icons](https://gitlab.it-mkt.corpdev.redhat.com/it-marketing/rh-iconfont/tree/master/src/iconfont/vectors/rh_icon)
-- [Web-icons](https://gitlab.it-mkt.corpdev.redhat.com/it-marketing/rh-iconfont/tree/master/src/iconfont/vectors/web_icon)
+- [RH-Icons](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tree/master/src/iconfont/vectors/rh_icon)
+- [Web-icons](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tree/master/src/iconfont/vectors/web_icon)
 
 ### Adding new icons to the icon fonts
 
