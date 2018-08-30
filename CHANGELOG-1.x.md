@@ -1,3 +1,11 @@
+## 1.3.3 (2018-08-30)
+Tag: [1.3.3](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/1.3.3)
+-   Update package.json to keep dist directory when pulled in as dependency
+
+## 1.3.2 (2018-08-21)
+Tag: [1.3.2](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/1.3.2)
+-   Update URL paths to new env and commit dist directory
+
 ## 1.3.1 (2018-04-24)
 Tag: [1.3.1](https://gitlab.it-mkt.corpdev.redhat.com/it-marketing/rh-iconfont/tags/1.3.1)
  - Correct package.json project name and update versions
