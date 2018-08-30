@@ -1,6 +1,6 @@
 ## 1.3.3 (2018-08-30)
 Tag: [1.3.3](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/1.3.3)
--   Update package.json to keep dist directory when pulled in as dependency
+-   NPM not pulling in the compiled dist directory; added an .npmignore file and updated package.json to keep dist directory when pulled in as dependency
 
 ## 1.3.2 (2018-08-21)
 Tag: [1.3.2](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/1.3.2)
