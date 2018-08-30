@@ -5,6 +5,8 @@
 ### Setup
 
 1. Run `npm install`
+2. Run `grunt` to compile the repository
+3. You should then be able to preview the icons at `fixtures/icon-preview.html`
 
 ### Viewing the icons
 
@@ -24,8 +26,8 @@ Click on an SVG to preview it:
 ### Creating a tag
 
 -   `git checkout master && git fetch origin && git pull origin && git checkout -b temp && grunt && git add dist -f`
--   `git commit -m "rh-iconfont 1.0.0--X release"`
--   `git tag 1.0.0--X && git push origin 1.0.0--X`
+-   `git commit -m "rh-iconfont 1.x.x release"`
+-   `git tag 1.x.x && git push origin 1.x.x`
 -   `git checkout master && git fetch origin && git pull origin && git branch -D temp`
 
 <br/>
@@ -33,18 +35,18 @@ Click on an SVG to preview it:
 
 ### Importing the iconfont
 
--   Using npm or a similar tool to pull in a _specific_ tagged release of this project. Please do not use loose versioning (example: `~` or `^`), instead, use bower to load a tag that will not automatically upgrade.
+-   Use npm (or a similar tool) to pull in a _specific_ tagged release of this project. Please do not use loose versioning (example: `~` or `^`), instead, use bower to load a tag that will not automatically upgrade.
 
     ```
     {
         "name": "your-project",
         "dependencies": {
-            "rh-iconfont": "git+https://gitlab.corp.redhat.com/uxdd/rh-iconfont.git#1.1.0"
+            "rh-iconfont": "git+https://gitlab.corp.redhat.com/uxdd/rh-iconfont.git#1.3.0"
         },
     }
     ```
 
--   Example using bower:
+-   Example using bower (if you must but this tool is deprecated):
 
     ```
     {

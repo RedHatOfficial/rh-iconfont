@@ -1,0 +1,30 @@
+# Library folders
+node_modules/
+bower_components/
+phantomcss/
+vendor/
+lib/
+tmp/
+
+# NPM
+npm-debug.log
+
+# Mac
+.DS_Store
+
+# Vim
+.vimrc
+
+# PHPStorm
+.idea/
+
+#Aptana
+.project
+
+#sass
+.maps.css
+.sass-cache
+__*.scss
+*.css.map
+
+
