@@ -2,6 +2,7 @@
 Tag: [2.0.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/2.0.0)
 -   Adding web-icon-arrow-right and web-icon-grid-3x3
 -   Remove z from caret icons; this approach is deprecated
+-   Adding new icon: web-icon-instagram
 
 ## 1.3.3 (2018-08-30)
 Tag: [1.3.3](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/1.3.3)
