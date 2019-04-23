@@ -1,3 +1,8 @@
+## 2.0.0 (TBD)
+Tag: [2.0.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/2.0.0)
+-   Adding web-icon-arrow-right and web-icon-grid-3x3
+-   Remove z from caret icons; this approach is deprecated
+
 ## 1.3.3 (2018-08-30)
 Tag: [1.3.3](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/1.3.3)
 -   NPM not pulling in the compiled dist directory; added an .npmignore file and updated package.json to keep dist directory when pulled in as dependency
