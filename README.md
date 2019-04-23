@@ -5,8 +5,14 @@
 ### Setup
 
 1. Run `npm install`
-2. Run `grunt` to compile the repository
-3. You should then be able to preview the icons at `fixtures/icon-preview.html`
+2. If you are on a Mac, run `brew install ttfautohint fontforge`
+    b. Linux: `sudo apt-get install fontforge ttfautohint`
+    c. Windows: See instructions on [https://github.com/sapegin/grunt-webfont](https://github.com/sapegin/grunt-webfont)
+
+
+Run `grunt` to compile the repository
+
+To preview the icons, run `grunt watcher` and a localhost will spin up at: `fixtures/icon-preview.html`.
 
 ### Viewing the icons
 
@@ -18,10 +24,10 @@ Click on an SVG to preview it:
 ### Adding new icons to the icon fonts
 
 1. Drop the SVGs into one of the vector folders.
-    - Icons specific to red hat concepts should have a `rh-` prefix and belong in the `src/iconfont/vectors/rh_icon` folder
+    - Icons specific to Red Hat concepts should have a `rh-` prefix and belong in the `src/iconfont/vectors/rh_icon` folder
     - Universal web interface icons need a `web-` prefix and belong in the `src/iconfont/vectors/web_icon` folder.
 2. Run `grunt` to update the font, or `grunt watcher` to update and preview.
-    - Note: the SVG files are parsed alphabetically, so if you add new icons somewhere besides the bottom of the list, they will cause unicode values to change on existing icons that are alphabetically lower in the list.
+    - Note: the SVG files are parsed alphabetically, so if you add new icons somewhere besides the bottom of the list, they will cause unicode values to change on existing icons that are alphabetically lower in the list.  This is why we should *never* be calling an icon by it's unicode value via `content`.
 
 ### Creating a tag
 
@@ -41,7 +47,7 @@ Click on an SVG to preview it:
     {
         "name": "your-project",
         "dependencies": {
-            "rh-iconfont": "git+https://gitlab.corp.redhat.com/uxdd/rh-iconfont.git#1.3.0"
+            "rh-iconfont": "git+https://gitlab.corp.redhat.com/uxdd/rh-iconfont.git#2.0.0"
         },
     }
     ```
@@ -52,7 +58,7 @@ Click on an SVG to preview it:
     {
         "name": "your-project",
         "dependencies": {
-            "rh-iconfont": "git@gitlab.corp.redhat.com:uxdd/rh-iconfont.git#1.1.0"
+            "rh-iconfont": "git@gitlab.corp.redhat.com:uxdd/rh-iconfont.git#2.0.0"
         },
     }
     ```
@@ -61,7 +67,7 @@ Click on an SVG to preview it:
 
 #### If you are using Sass
 
--   Add the `bower_components` directory to your list of included paths, if you haven't already.
+-   Add the `node_modules` or `bower_components` directory to your list of included paths, if you haven't already.
 
         	```
         	module.exports = function ( grunt, pkg, paths ) {
@@ -69,7 +75,7 @@ Click on an SVG to preview it:
         	        // https://github.com/sindresorhus/grunt-sass
         	        sass: {
         	            options: {
-        	                includePaths: [ "./bower_components" ]
+        	                includePaths: [ "./node_modules" ]
         	            },
         	```
 
