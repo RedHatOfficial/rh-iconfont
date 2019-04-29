@@ -1,6 +1,6 @@
 {
-  "name": "rh-iconfont",
-  "version": "2.0.0",
+  "name": "@redhat/rh-iconfont",
+  "version": "3.0.0",
   "authors": [
     "Red Hat IT Marketing <it-marketing-tower@redhat.com>"
   ],
