@@ -1,4 +1,8 @@
-## 2.0.0 (TBD)
+## 3.0.0 (2019-04-29)
+Tag: [3.0.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/3.0.0)
+-  Add organzation name to package for hosting on static.redhat.com
+
+## 2.0.0 (2019-4-23)
 Tag: [2.0.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/2.0.0)
 -   Adding web-icon-arrow-right and web-icon-grid-3x3
 -   Remove z from caret icons; this approach is deprecated
