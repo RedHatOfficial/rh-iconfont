@@ -10,36 +10,38 @@
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"publishConfig": {
-	  "access": "public"
+		"access": "public"
 	},
 	"keywords": [
-	  "icons",
-	  "font"
+		"icons",
+		"font"
 	],
 	"repository": {
 		"type": "git",
 		"url": "git@github.com:RedHatOfficial/rh-iconfont.git"
 	},
-	"contributors": [{
-		"name": "Mark Caron",
-		"url": "https://github.com/markcaron"
-	  },
-	  {
-		"name": "dcaryll",
-		"url": "https://github.com/dcaryll"
-	  },
-	  {
-		"name": "castastrophe",
-		"url": "https://github.com/castastrophe"
-	  },
-	  {
-		"name": "Kendall Totten",
-		"url": "https://github.com/starryeyez024"
-	  },
-	  {
-		"name": "Shawn Iwinski",
-		"url": "https://github.com/siwinski"
-	}],
+	"contributors": [
+		{
+			"name": "Mark Caron",
+			"url": "https://github.com/markcaron"
+		},
+		{
+			"name": "dcaryll",
+			"url": "https://github.com/dcaryll"
+		},
+		{
+			"name": "castastrophe",
+			"url": "https://github.com/castastrophe"
+		},
+		{
+			"name": "Kendall Totten",
+			"url": "https://github.com/starryeyez024"
+		},
+		{
+			"name": "Shawn Iwinski",
+			"url": "https://github.com/siwinski"
+		}
+	],
 	"license": "MIT",
 	"devDependencies": {
 		"grunt": "^0.4.5",
