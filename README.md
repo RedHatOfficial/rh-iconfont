@@ -36,7 +36,6 @@ Click on an SVG to preview it:
 -   `git tag 1.x.x && git push origin 1.x.x`
 -   `git checkout master && git fetch origin && git pull origin && git branch -D temp`
 
-<br/>
 ## Using these icons in your project
 
 ### Importing the iconfont
