@@ -1,3 +1,7 @@
+## 3.0.1 (2019-05-23)
+Tag: [3.0.1](https://github.com/RedHatOfficial/rh-iconfont/tags/3.0.1)
+-  Open sourcing the project; add licensing, keywords, contributors
+
 ## 3.0.0 (2019-04-29)
 Tag: [3.0.0](https://github.com/RedHatOfficial/rh-iconfont/tags/3.0.0)
 -  Add organzation name to package for hosting on static.redhat.com

@@ -1,6 +1,6 @@
 {
 	"name": "@redhat/rh-iconfont",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"description": "The Red Hat Icon Font",
 	"main": "/fixtures/icon-preview.html",
 	"files": [
@@ -9,14 +9,38 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
+	"publishConfig": {
+	  "access": "public"
+	},
+	"keywords": [
+	  "icons",
+	  "font"
+	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://gitlab.corp.redhat.com/uxdd/rh-iconfont.git"
+		"url": "git@github.com:RedHatOfficial/rh-iconfont.git"
 	},
-	"authors": [
-		"Red Hat IT Marketing <it-marketing-tower@redhat.com>"
-	],
-	"license": "ISC",
+	"contributors": [{
+		"name": "Mark Caron",
+		"url": "https://github.com/markcaron"
+	  },
+	  {
+		"name": "dcaryll",
+		"url": "https://github.com/dcaryll"
+	  },
+	  {
+		"name": "castastrophe",
+		"url": "https://github.com/castastrophe"
+	  },
+	  {
+		"name": "Kendall Totten",
+		"url": "https://github.com/starryeyez024"
+	  },
+	  {
+		"name": "Shawn Iwinski",
+		"url": "https://github.com/siwinski"
+	}],
+	"license": "MIT",
 	"devDependencies": {
 		"grunt": "^0.4.5",
 		"grunt-bump": "^0.5.0",
