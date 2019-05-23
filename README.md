@@ -1,4 +1,4 @@
-# Welcome to the redhat.com font library!
+# Welcome to the Red Hat Icon Font library
 
 ## Development
 
@@ -18,8 +18,8 @@ To preview the icons, run `grunt watcher` and a localhost will spin up at: `fixt
 
 Click on an SVG to preview it:
 
--   [RH-Icons](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tree/master/src/iconfont/vectors/rh_icon)
--   [Web-icons](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tree/master/src/iconfont/vectors/web_icon)
+-   [RH-Icons](https://github.com/RedHatOfficial/rh-iconfont/tree/master/src/iconfont/vectors/rh_icon)
+-   [Web-icons](https://github.com/RedHatOfficial/rh-iconfont/tree/master/src/iconfont/vectors/web_icon)
 
 ### Adding new icons to the icon fonts
 
@@ -47,7 +47,7 @@ Click on an SVG to preview it:
     {
         "name": "your-project",
         "dependencies": {
-            "rh-iconfont": "git+https://gitlab.corp.redhat.com/uxdd/rh-iconfont.git#2.0.0"
+            "rh-iconfont": "git@github.com:RedHatOfficial/rh-iconfont.git#2.0.0"
         },
     }
     ```
@@ -58,7 +58,7 @@ Click on an SVG to preview it:
     {
         "name": "your-project",
         "dependencies": {
-            "rh-iconfont": "git@gitlab.corp.redhat.com:uxdd/rh-iconfont.git#2.0.0"
+            "rh-iconfont": "git@github.com:RedHatOfficial/rh-iconfont.git#2.0.0"
         },
     }
     ```
