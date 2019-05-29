@@ -4,7 +4,8 @@
 	"description": "The Red Hat Icon Font",
 	"main": "/fixtures/icon-preview.html",
 	"files": [
-		"dist/**/*"
+		"dist/**/*",
+		"src/iconfont/vectors"
 	],
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
