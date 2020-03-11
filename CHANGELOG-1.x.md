@@ -1,6 +1,6 @@
-## 3.0.2 (2020-03-11)
-Tag: [3.0.2](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/3.0.2)
-- [US248254](https://rally1.rallydev.com/#/270861059696d/detail/userstory/374168380692) Updated quote icon
+## 3.1.0 (2020-03-11)
+Tag: [3.0.2](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/3.1.0)
+- [US248254](https://rally1.rallydev.com/#/270861059696d/detail/userstory/374168380692) Updated quote mark, per new brand icons
 
 ## 3.0.1 (2019-12-16)
 Tag: [3.0.1](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/3.0.1)
