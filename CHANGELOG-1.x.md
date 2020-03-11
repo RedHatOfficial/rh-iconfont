@@ -1,3 +1,7 @@
+## 3.0.2 (2020-03-11)
+Tag: [3.0.2](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/3.0.2)
+- [US248254](https://rally1.rallydev.com/#/270861059696d/detail/userstory/374168380692) Updated quote icon
+
 ## 3.0.1 (2019-12-16)
 Tag: [3.0.1](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/3.0.1)
 - [US241549](https://rally1.rallydev.com/#/270861059696d/detail/userstory/360084243440)Added github, tab-arrow web-icons and updated grid-3x3, user, mobile-menu, search, globe, new-window web-icons.
