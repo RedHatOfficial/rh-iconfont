@@ -1,3 +1,19 @@
+## 3.3.0 (TBD)
+Tag: [3.3.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/3.3.0)
+- []()
+
+## 3.2.0 (2020-03-23)
+Tag: [3.2.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/3.2.0)
+- [US246804](https://rally1.rallydev.com/#/detail/userstory/371467289072) Added new alert icons
+
+## 3.1.0 (2020-03-11)
+Tag: [3.1.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/3.1.0)
+- [US248254](https://rally1.rallydev.com/#/detail/userstory/374168380692) Updated quote mark, per new brand icons
+
+## 3.0.1 (2019-12-16)
+Tag: [3.0.1](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/3.0.1)
+- [US241549](https://rally1.rallydev.com/#/detail/userstory/360084243440)Added github, tab-arrow web-icons and updated grid-3x3, user, mobile-menu, search, globe, new-window web-icons.
+
 ## 3.0.0 (2019-04-29)
 Tag: [3.0.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/3.0.0)
 -  Add organzation name to package for hosting on static.redhat.com

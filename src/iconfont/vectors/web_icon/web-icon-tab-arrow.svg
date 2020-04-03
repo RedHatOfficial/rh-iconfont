@@ -2,8 +2,6 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" x="0px" y="0px" viewBox="0 0 32 32">
 <g>
-<path d="M31.6,29.9l-9.1-9.1c1.8-2.2,2.9-5,2.9-8.1c0-7-5.7-12.7-12.7-12.7S0,5.7,0,12.7s5.7,12.7,12.7,12.7c3.1,0,5.9-1.1,8.1-2.9
-	l9.1,9.1c0.2,0.2,0.6,0.4,0.9,0.4c0.3,0,0.6-0.1,0.9-0.4C32.1,31.2,32.1,30.4,31.6,29.9z M2.5,12.7c0-5.7,4.6-10.3,10.3-10.3
-	S23,7.1,23,12.7S18.4,23,12.7,23S2.5,18.4,2.5,12.7z"/>
+<polygon points="16,24 0,8 32,8 "/>
 </g>
 </svg>
