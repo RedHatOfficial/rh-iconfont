@@ -14,7 +14,7 @@ module.exports = function (grunt, pkg) {
           template: 'src/iconfont/templates/sass-template.css',
           htmlDemo: true,
           htmlDemoTemplate: 'src/iconfont/templates/html-template.html',
-          codepointsFile: '../codepoints.rh_icon.map',
+          codepointsFile: 'codepoints.rh_icon.map',
           destHtml: 'dist/files',
           templateOptions: {
             "fontFamilyName": "rh-iconfont",
@@ -35,7 +35,7 @@ module.exports = function (grunt, pkg) {
           template: 'src/iconfont/templates/sass-template.css',
           htmlDemo: true,
           htmlDemoTemplate: 'src/iconfont/templates/html-template.html',
-          codepointsFile: '../codepoints.rh_web_icon.map',
+          codepointsFile: 'codepoints.rh_web_icon.map',
           destHtml: 'dist/files',
           templateOptions: {
             "fontFamilyName": "rh-web-iconfont",
