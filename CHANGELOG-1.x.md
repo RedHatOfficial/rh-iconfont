@@ -1,6 +1,9 @@
-## 3.3.0 (TBD)
-Tag: [3.3.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/3.3.0)
+## 3.4.0 (TBD)
 - []()
+
+## 3.3.0 (2020-04-26)
+Tag: [3.3.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/3.3.0)
+- [US255392](https://rally1.rallydev.com/#/detail/userstory/387560173264) Fix new iconfont reorder issue
 
 ## 3.2.0 (2020-03-23)
 Tag: [3.2.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/3.2.0)

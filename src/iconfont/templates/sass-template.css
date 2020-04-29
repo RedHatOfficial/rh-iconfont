@@ -47,10 +47,10 @@
 @mixin print-<%= baseClass %>-font-face($path_to_dist: '../') {
     @font-face {
       font-family: '<%= fontFamilyName %>';
-      src: url("#{$path_to_dist}<%= pathFromDist %>-<%= hash %>.eot?");
-      src: url("#{$path_to_dist}<%= pathFromDist %>-<%= hash %>.eot?#iefix") format("embedded-opentype"),
-           url("#{$path_to_dist}<%= pathFromDist %>-<%= hash %>.woff?") format("woff"),
-           url("#{$path_to_dist}<%= pathFromDist %>-<%= hash %>.ttf?") format("truetype");
+      src: url("#{$path_to_dist}<%= pathFromDist %>.eot");
+      src: url("#{$path_to_dist}<%= pathFromDist %>.eot?#iefix") format("embedded-opentype"),
+           url("#{$path_to_dist}<%= pathFromDist %>.woff") format("woff"),
+           url("#{$path_to_dist}<%= pathFromDist %>.ttf") format("truetype");
       font-weight: normal;
       font-style: normal;
     }
