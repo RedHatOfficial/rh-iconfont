@@ -1,6 +1,6 @@
 {
 	"name": "@redhat/rh-iconfont",
-	"version": "3.4.0",
+	"version": "4.0.0",
 	"description": "The Red Hat Icon Font",
 	"main": "/fixtures/icon-preview.html",
 	"files": [
