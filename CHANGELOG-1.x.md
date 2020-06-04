@@ -1,6 +1,11 @@
+## 4.0.1 (2020-06-04)
+Tag: [4.0.1](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/4.0.1)
+- [DE23576](https://rally1.rallydev.com/#/270861059696d/detail/defect/396289654572) Removed set width and height from icons
+
 ## 4.0.0 (2020-06-03)
-Tag: [3.4.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/3.4.0)
+Tag: [4.0.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/4.0.0)
 - [US255468](https://rally1.rallydev.com/#/detail/userstory/387738909116) Update most icons to new match new Red Hat brand standards
+
 
 ## 3.3.0 (2020-04-26)
 Tag: [3.3.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/3.3.0)
