@@ -1,4 +1,8 @@
-## 3.3.0 (TBD)
+## 4.0.0 (2020-06-03)
+Tag: [3.4.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/3.4.0)
+- [US255468](https://rally1.rallydev.com/#/detail/userstory/387738909116) Update most icons to new match new Red Hat brand standards
+
+## 3.3.0 (2020-04-26)
 Tag: [3.3.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/3.3.0)
 - [US255392](https://rally1.rallydev.com/#/detail/userstory/387560173264) Fix new iconfont reorder issue
 
