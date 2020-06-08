@@ -1,3 +1,7 @@
+## 4.1.0 (2020-06-08)
+Tag: [4.1.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/4.1.0)
+- feat: Add a listing file with all icon names
+
 ## 4.0.1 (2020-06-04)
 Tag: [4.0.1](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/4.0.1)
 - [DE23576](https://rally1.rallydev.com/#/270861059696d/detail/defect/396289654572) Removed set width and height from icons
