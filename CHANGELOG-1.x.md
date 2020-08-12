@@ -1,13 +1,16 @@
 
-## 4.2.0 (2020-08-11)
-Tag: [4.2.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/4.2.0)
+## 4.1.0 (2020-08-12)
+Tag: [4.1.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/4.1.0)
 
 - feat: Clean up paths on many icons, add 3 new icons:
     - virtual-server-stack-unsecure
     - virtual-server-secured
     - arrows-lower-cost
- ## 4.1.0 (2020-06-08)
+
+
+## 4.1.0 (2020-06-08)
 Tag: [4.1.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/4.1.0)
+
 - feat: Add a listing file with all icon names
 
 ## 4.0.1 (2020-06-04)
