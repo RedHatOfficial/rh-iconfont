@@ -6,11 +6,6 @@ Tag: [4.1.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/4.1.0)
     - virtual-server-stack-unsecure
     - virtual-server-secured
     - arrows-lower-cost
-
-
-## 4.1.0 (2020-06-08)
-Tag: [4.1.0](https://gitlab.corp.redhat.com/uxdd/rh-iconfont/tags/4.1.0)
-
 - feat: Add a listing file with all icon names
 
 ## 4.0.1 (2020-06-04)
