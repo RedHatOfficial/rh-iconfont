@@ -143,3 +143,8 @@ OR
 ```
 <p class="my-fancy-class web-icon-open-quote">To be, or not to be...</p>
 ```
+
+
+## Issues or questions
+
+Please send an email to [web@redhat.com](mailto:web@redhat.com)
