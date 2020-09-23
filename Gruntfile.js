@@ -68,6 +68,8 @@ module.exports = function (grunt) {
 
   grunt.registerTask("default", ["build"]);
 
+  grunt.registerTask("build:ci", ["build", "copy"]);
+
   grunt.registerTask("watcher", [
     "build", // files
     "copy",

@@ -10,6 +10,7 @@
 	"scripts": {
 		"start": "grunt watcher",
 		"build": "grunt",
+		"build:ci": "grunt build:ci",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"publishConfig": {
