@@ -7,13 +7,14 @@ module.exports = function (grunt, pkg) {
         dest: 'dist/fonts/rh_icon',
         destCss: 'dist/files/',
         options: {
-          fontFilename: 'rh-iconfont-{hash}',
+          fontFilename: 'rh-iconfont',
           relativeFontPath: '../fonts/rh_icon',
           font: 'rh-iconfont',
           stylesheet: 'scss',
           template: 'src/iconfont/templates/sass-template.css',
           htmlDemo: true,
           htmlDemoTemplate: 'src/iconfont/templates/html-template.html',
+          codepointsFile: 'codepoints.rh_icon.map',
           destHtml: 'dist/files',
           templateOptions: {
             "fontFamilyName": "rh-iconfont",
@@ -27,13 +28,14 @@ module.exports = function (grunt, pkg) {
         dest: 'dist/fonts/web_icon',
         destCss: 'dist/files/',
         options: {
-          fontFilename: 'rh-web-iconfont-{hash}',
+          fontFilename: 'rh-web-iconfont',
           relativeFontPath: '../fonts/web_icon',
           font: 'web-iconfont',
           stylesheet: 'scss',
           template: 'src/iconfont/templates/sass-template.css',
           htmlDemo: true,
           htmlDemoTemplate: 'src/iconfont/templates/html-template.html',
+          codepointsFile: 'codepoints.rh_web_icon.map',
           destHtml: 'dist/files',
           templateOptions: {
             "fontFamilyName": "rh-web-iconfont",

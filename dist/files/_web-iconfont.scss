@@ -47,10 +47,10 @@
 @mixin print-web-icon-font-face($path_to_dist: '../') {
     @font-face {
       font-family: 'rh-web-iconfont';
-      src: url("#{$path_to_dist}fonts/web_icon/rh-web-iconfont-8305bd172bcc7f396f3474675fe53145.eot?");
-      src: url("#{$path_to_dist}fonts/web_icon/rh-web-iconfont-8305bd172bcc7f396f3474675fe53145.eot?#iefix") format("embedded-opentype"),
-           url("#{$path_to_dist}fonts/web_icon/rh-web-iconfont-8305bd172bcc7f396f3474675fe53145.woff?") format("woff"),
-           url("#{$path_to_dist}fonts/web_icon/rh-web-iconfont-8305bd172bcc7f396f3474675fe53145.ttf?") format("truetype");
+      src: url("#{$path_to_dist}fonts/web_icon/rh-web-iconfont.eot");
+      src: url("#{$path_to_dist}fonts/web_icon/rh-web-iconfont.eot?#iefix") format("embedded-opentype"),
+           url("#{$path_to_dist}fonts/web_icon/rh-web-iconfont.woff") format("woff"),
+           url("#{$path_to_dist}fonts/web_icon/rh-web-iconfont.ttf") format("truetype");
       font-weight: normal;
       font-style: normal;
     }
