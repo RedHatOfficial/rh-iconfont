@@ -45,5 +45,21 @@ module.exports = function (grunt, pkg) {
         }
       }
     },
+
+    // Watch for changes and trigger compass and livereload
+    // https://github.com/gruntjs/grunt-contrib-watch
+    watch: {
+      options: {
+          livereload: true
+      },
+      rhicons: {
+          files: "src/iconfont/vectors/rh_icon/*.svg",
+          tasks: ["webfont:rh_icon"]
+      },
+      webicons: {
+          files: "src/iconfont/vectors/web_icon/*.svg",
+          tasks: ["webfont:rh_web_icon"]
+      }
+    }
   });
 }

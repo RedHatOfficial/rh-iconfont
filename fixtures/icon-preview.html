@@ -1,61 +1,87 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Icon Preview</title>
-  <link rel="stylesheet" type="text/css" href="../dist/files/rh-iconfont.css">
-  <link rel="stylesheet" type="text/css" href="../dist/files/rh-web-iconfont.css">
+  <title>Red Hat | Icon preview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" />
+
+  <link rel="stylesheet" type="text/css" href="files/rh-iconfont.css">
+  <link rel="stylesheet" type="text/css" href="files/rh-web-iconfont.css">
+
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js"></script>
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+  <script>
+    require([
+      "assets/pfe-band/dist/pfe-band.umd.js",
+      "assets/pfe-card/dist/pfe-card.umd.js"
+    ])
+  </script>
   <style type="text/css">
-    .icons {
-      display: flex;
-      flex-wrap: wrap;
+    pfe-band {
+      --pfe-band--Width: calc(100vw - 80px);
     }
+
+    .icons {
+      display: grid;
+      grid-gap: 15px;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 200px));
+    }
+
     .icons__item {
-      float: left;
-      width: 16%;
       text-align: center;
       margin-bottom: 2em;
     }
+
     span {
       display: block;
       margin-top: .5em;
     }
+
     i:before {
       font-size: 3em;
       display: inline-block;
-      background: #efefef;
+      background: #fff;
       border: 1px solid #ddd;
     }
-    i:hover:before {
-      transform: scale(2);
+
+    i:hover {
+      cursor: pointer;
     }
 
+    i:hover:before {
+      transform: scale(4);
+    }
   </style>
 </head>
+
 <body>
-<h2>RH Icons</h2>
-<div id="rh-icon">
+  <pfe-band pfe-color="lightest">
+    <h2 slot="pfe-band--header">RH Icons</h2>
+    <div id="rh-icon"></div>
+  </pfe-band>
 
-</div>
+  <pfe-band pfe-color="lightest">
+    <h2 slot="pfe-band--header">Web Icons</h2>
+    <div id="web-icon"></div>
+  </pfe-band>
 
-<h2>Web Icons</h2>
-<div id="web-icon">
-</div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript">
+    $.ajax({
+      url: "files/rh-iconfont.html",
+      context: document.body
+    }).done(function (markup) {
+      $("#rh-icon").html(markup);
+    });
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script type="text/javascript">
-  $.ajax({
-    url: "../dist/files/rh-iconfont.html",
-    context: document.body
-  }).done(function(markup) {
-    $("#rh-icon").html(markup);
-  });
-
-  $.ajax({
-    url: "../dist/files/web-iconfont.html",
-    context: document.body
-  }).done(function(markup) {
-    $("#web-icon").html(markup);
-  });
-</script>
+    $.ajax({
+      url: "files/web-iconfont.html",
+      context: document.body
+    }).done(function (markup) {
+      $("#web-icon").html(markup);
+    });
+  </script>
 </body>
+
 </html>

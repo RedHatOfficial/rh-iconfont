@@ -2,7 +2,6 @@
 
 module.exports = function (grunt) {
   var pkg = require("./package.json");
-  var fs = require("fs");
   var path = require("path");
 
   ////////////////////////
@@ -59,7 +58,7 @@ module.exports = function (grunt) {
     });
   });
 
-  grunt.registerTask("default", [
+  grunt.registerTask("build", [
     "clean", // files
     "webfont", // iconfont
     "svgmin", // files
@@ -67,12 +66,12 @@ module.exports = function (grunt) {
     "sass", // sass
   ]);
 
+  grunt.registerTask("default", ["build"]);
+
   grunt.registerTask("watcher", [
-    "clean", // files
-    "webfont", // iconfont
-    "svgmin", // files
-    "listing",
-    "sass", // sass
+    "build", // files
+    "copy",
     "connect",
+    "watch"
   ]);
 };

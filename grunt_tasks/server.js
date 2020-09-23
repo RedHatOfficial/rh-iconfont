@@ -5,10 +5,9 @@ module.exports = function (grunt, pkg) {
     connect: {
       server: {
         options: {
-          port: 9001,
-          base: './',
-          open: "http://localhost:9001/fixtures/icon-preview.html",
-          keepalive: 'true'
+          base: './dist',
+          open: true,
+          livereload: true
         }
       }
     }
