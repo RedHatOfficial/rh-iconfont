@@ -1,3 +1,31 @@
+## 4.1.0 (2020-08-12)
+Tag: [4.1.0](https://github.com/RedHatOfficial/rh-iconfont/tags/4.1.0)
+-  feat: Clean up paths on many icons, add 3 new icons:
+    - virtual-server-stack-unsecure
+    - virtual-server-secured
+    - arrows-lower-cost
+-  feat: Add a listing file with all icon names
+
+## 4.0.1 (2020-06-04)
+Tag: [4.0.1](https://github.com/RedHatOfficial/rh-iconfont/tags/4.0.1)
+-  Removed set width and height from icons
+
+## 4.0.0 (2020-06-03)
+Tag: [4.0.0](https://github.com/RedHatOfficial/rh-iconfont/tags/4.0.0)
+-  Update most icons to match new Red Hat brand standards
+
+## 3.3.0 (2020-04-26)
+Tag: [3.3.0](https://github.com/RedHatOfficial/rh-iconfont/tags/3.3.0)
+-  Fix new iconfont reorder issue
+
+## 3.2.0 (2020-03-23)
+Tag: [3.2.0](https://github.com/RedHatOfficial/rh-iconfont/tags/3.2.0)
+-  Added new alert icons
+
+## 3.1.0 (2020-03-11)
+Tag: [3.1.0](https://github.com/RedHatOfficial/rh-iconfont/tags/3.1.0)
+-  Updated quote mark, per new brand icons
+
 ## 3.0.1 (2019-05-23)
 Tag: [3.0.1](https://github.com/RedHatOfficial/rh-iconfont/tags/3.0.1)
 -  Open sourcing the project; add licensing, keywords, contributors
