@@ -1,3 +1,7 @@
+## 4.0.1 (2020-06-04)
+Tag: [4.0.1](https://github.com/RedHatOfficial/rh-iconfont/tags/4.0.1)
+-  Removed set width and height from icons
+
 ## 4.0.0 (2020-06-03)
 Tag: [4.0.0](https://github.com/RedHatOfficial/rh-iconfont/tags/4.0.0)
 -  Update most icons to match new Red Hat brand standards
