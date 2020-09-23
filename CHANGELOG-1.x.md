@@ -1,6 +1,10 @@
+## 4.0.0 (2020-06-03)
+Tag: [4.0.0](https://github.com/RedHatOfficial/rh-iconfont/tags/4.0.0)
+-  Update most icons to match new Red Hat brand standards
+
 ## 3.3.0 (2020-04-26)
 Tag: [3.3.0](https://github.com/RedHatOfficial/rh-iconfont/tags/3.3.0)
-- Fix new iconfont reorder issue
+-  Fix new iconfont reorder issue
 
 ## 3.2.0 (2020-03-23)
 Tag: [3.2.0](https://github.com/RedHatOfficial/rh-iconfont/tags/3.2.0)
