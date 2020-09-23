@@ -4,6 +4,7 @@ module.exports = function (grunt, pkg) {
     // https://github.com/sindresorhus/grunt-sass
     sass: {
       options: {
+        implementation: require("node-sass"),
         includePaths: ['./dist/'],
         outputStyle: 'expanded'
       },

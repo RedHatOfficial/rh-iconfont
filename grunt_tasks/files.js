@@ -47,7 +47,8 @@ module.exports = function (grunt, pkg) {
     },
 
     clean: {
-      assetsDist: ["./dist/*"]
+      assetsDist: ["./dist/*"],
+      codepoints: ["codepoints.rh_*icon.map"]
     },
 
     // Watch for changes and trigger compass and livereload
