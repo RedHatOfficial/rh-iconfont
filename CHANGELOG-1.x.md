@@ -1,3 +1,7 @@
+## 3.2.0 (2020-03-23)
+Tag: [3.2.0](https://github.com/RedHatOfficial/rh-iconfont/tags/3.2.0)
+-  Added new alert icons
+
 ## 3.1.0 (2020-03-11)
 Tag: [3.1.0](https://github.com/RedHatOfficial/rh-iconfont/tags/3.1.0)
 -  Updated quote mark, per new brand icons
