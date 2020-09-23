@@ -1,3 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg viewBox="0 0 31.56 31.56" xmlns="http://www.w3.org/2000/svg"><path d="M23.67 23.67h7.89v7.89h-7.89zM11.84 23.67h7.89v7.89h-7.89zM0 23.67h7.89v7.89H0zM23.67 11.84h7.89v7.89h-7.89zM11.84 11.84h7.89v7.89h-7.89zM0 11.84h7.89v7.89H0zM23.67 0h7.89v7.89h-7.89zM11.84 0h7.89v7.89h-7.89zM0 0h7.89v7.89H0z"/></svg>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<path d="M25.6,28.8a3.2,3.2 0 1,0 6.4,0a3.2,3.2 0 1,0 -6.4,0"/>
+<path d="M12.8,28.8a3.2,3.2 0 1,0 6.4,0a3.2,3.2 0 1,0 -6.4,0"/>
+<path d="M0,28.8a3.2,3.2 0 1,0 6.4,0a3.2,3.2 0 1,0 -6.4,0"/>
+<path d="M25.6,16a3.2,3.2 0 1,0 6.4,0a3.2,3.2 0 1,0 -6.4,0"/>
+<path d="M12.8,16a3.2,3.2 0 1,0 6.4,0a3.2,3.2 0 1,0 -6.4,0"/>
+<path d="M0,16a3.2,3.2 0 1,0 6.4,0a3.2,3.2 0 1,0 -6.4,0"/>
+<path d="M25.6,3.2a3.2,3.2 0 1,0 6.4,0a3.2,3.2 0 1,0 -6.4,0"/>
+<path d="M12.8,3.2a3.2,3.2 0 1,0 6.4,0a3.2,3.2 0 1,0 -6.4,0"/>
+<path d="M0,3.2a3.2,3.2 0 1,0 6.4,0a3.2,3.2 0 1,0 -6.4,0"/>
+</svg>

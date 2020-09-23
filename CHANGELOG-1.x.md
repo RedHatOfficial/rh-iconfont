@@ -1,3 +1,7 @@
+## 3.1.0 (2020-03-11)
+Tag: [3.1.0](https://github.com/RedHatOfficial/rh-iconfont/tags/3.1.0)
+-  Updated quote mark, per new brand icons
+
 ## 3.0.1 (2019-05-23)
 Tag: [3.0.1](https://github.com/RedHatOfficial/rh-iconfont/tags/3.0.1)
 -  Open sourcing the project; add licensing, keywords, contributors
