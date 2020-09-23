@@ -30,6 +30,10 @@
   content: "";
 }
 
+.rh-icon-agile:before {
+  content: "";
+}
+
 .rh-icon-airplane:before {
   content: "";
 }
@@ -102,6 +106,10 @@
   content: "";
 }
 
+.rh-icon-arrows-lower-cost:before {
+  content: "";
+}
+
 .rh-icon-arrows-simplify:before {
   content: "";
 }
@@ -116,6 +124,10 @@
 
 .rh-icon-award-ribbon:before {
   content: "";
+}
+
+.rh-icon-backlog:before {
+  content: "";
 }
 
 .rh-icon-bar-graph:before {
@@ -164,6 +176,10 @@
 
 .rh-icon-brain:before {
   content: "";
+}
+
+.rh-icon-burndown-chart:before {
+  content: "";
 }
 
 .rh-icon-bus-front-view:before {
@@ -338,6 +354,10 @@
   content: "";
 }
 
+.rh-icon-container-registry:before {
+  content: "";
+}
+
 .rh-icon-container-secured:before {
   content: "";
 }
@@ -368,6 +388,10 @@
 
 .rh-icon-credit-card:before {
   content: "";
+}
+
+.rh-icon-cross-functional-collaboration:before {
+  content: "";
 }
 
 .rh-icon-cross:before {
@@ -422,6 +446,10 @@
   content: "";
 }
 
+.rh-icon-digital-standup:before {
+  content: "";
+}
+
 .rh-icon-disruption:before {
   content: "";
 }
@@ -440,6 +468,10 @@
 
 .rh-icon-eBook:before {
   content: "";
+}
+
+.rh-icon-ear:before {
+  content: "";
 }
 
 .rh-icon-edge:before {
@@ -488,6 +520,10 @@
 
 .rh-icon-envelope:before {
   content: "";
+}
+
+.rh-icon-erlenmeyer-flask:before {
+  content: "";
 }
 
 .rh-icon-everything-as-a-service:before {
@@ -566,6 +602,10 @@
   content: "";
 }
 
+.rh-icon-gitops:before {
+  content: "";
+}
+
 .rh-icon-glass-bottle:before {
   content: "";
 }
@@ -598,6 +638,10 @@
   content: "";
 }
 
+.rh-icon-gpu:before {
+  content: "";
+}
+
 .rh-icon-graduation-cap:before {
   content: "";
 }
@@ -620,6 +664,10 @@
 
 .rh-icon-graph-steady-up:before {
   content: "";
+}
+
+.rh-icon-grooming:before {
+  content: "";
 }
 
 .rh-icon-hand-closed:before {
@@ -726,6 +774,10 @@
   content: "";
 }
 
+.rh-icon-kanban:before {
+  content: "";
+}
+
 .rh-icon-key:before {
   content: "";
 }
@@ -736,6 +788,10 @@
 
 .rh-icon-kiosk:before {
   content: "";
+}
+
+.rh-icon-kubernetes-pod:before {
+  content: "";
 }
 
 .rh-icon-lab-flask:before {
@@ -848,6 +904,10 @@
 
 .rh-icon-microservices:before {
   content: "";
+}
+
+.rh-icon-migration:before {
+  content: "";
 }
 
 .rh-icon-mobile-devices:before {
@@ -994,6 +1054,10 @@
   content: "";
 }
 
+.rh-icon-open-source:before {
+  content: "";
+}
+
 .rh-icon-operations:before {
   content: "";
 }
@@ -1080,6 +1144,10 @@
 
 .rh-icon-piggy-bank:before {
   content: "";
+}
+
+.rh-icon-planning:before {
+  content: "";
 }
 
 .rh-icon-plastic-bottle:before {
@@ -1354,6 +1422,10 @@
   content: "";
 }
 
+.rh-icon-standup:before {
+  content: "";
+}
+
 .rh-icon-star:before {
   content: "";
 }
@@ -1514,6 +1586,10 @@
   content: "";
 }
 
+.rh-icon-user-story:before {
+  content: "";
+}
+
 .rh-icon-user:before {
   content: "";
 }
@@ -1546,8 +1622,16 @@
   content: "";
 }
 
+.rh-icon-virtual-server-stack-secure:before {
+  content: "";
+}
+
 .rh-icon-virtual-server-stack-secured:before {
   content: "";
+}
+
+.rh-icon-virtual-server-stack-unsecure:before {
+  content: "";
 }
 
 .rh-icon-virtual-server-stack-unsecured:before {

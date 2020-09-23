@@ -1,3 +1,11 @@
+## 4.1.0 (2020-08-12)
+Tag: [4.1.0](https://github.com/RedHatOfficial/rh-iconfont/tags/4.1.0)
+-  feat: Clean up paths on many icons, add 3 new icons:
+    - virtual-server-stack-unsecure
+    - virtual-server-secured
+    - arrows-lower-cost
+-  feat: Add a listing file with all icon names
+
 ## 4.0.1 (2020-06-04)
 Tag: [4.0.1](https://github.com/RedHatOfficial/rh-iconfont/tags/4.0.1)
 -  Removed set width and height from icons
