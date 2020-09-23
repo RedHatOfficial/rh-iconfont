@@ -1,18 +1,16 @@
-# Welcome to the Red Hat Icon Font library
+# Welcome to the Red Hat icon font library
 
 ## Development
 
 ### Setup
 
-1. Run `npm install`
-2. If you are on a Mac, run `brew install ttfautohint fontforge`
-    b. Linux: `sudo apt-get install fontforge ttfautohint`
-    c. Windows: See instructions on [https://github.com/sapegin/grunt-webfont](https://github.com/sapegin/grunt-webfont)
+```
+npm install
+```
 
+Run `npm run build` to compile the repository.
 
-Run `grunt` to compile the repository
-
-To preview the icons, run `grunt watcher` and a localhost will spin up at: `fixtures/icon-preview.html`.
+To preview the icons, run `npm run start` and a localhost will spin up.
 
 ### Viewing the icons
 
@@ -66,24 +64,24 @@ Click on an SVG to preview it:
 
 #### If you are using Sass
 
--   Add the `node_modules` or `bower_components` directory to your list of included paths, if you haven't already.
+-   Add the `node_modules` directory to your list of included paths, if you haven't already.
 
-        	```
-        	module.exports = function ( grunt, pkg, paths ) {
-        	    grunt.config.merge( {
-        	        // https://github.com/sindresorhus/grunt-sass
-        	        sass: {
-        	            options: {
-        	                includePaths: [ "./node_modules" ]
-        	            },
-        	```
+    ```
+    module.exports = function ( grunt, pkg, paths ) {
+        grunt.config.merge( {
+            // https://github.com/sindresorhus/grunt-sass
+            sass: {
+                options: {
+                    includePaths: [ "./node_modules" ]
+                },
+    ```
 
 -   Add an @import reference to the icon font sass file(s) in your root sass file.
 
-        	```
-        	@import "rh-iconfont/dist/files/web-iconfont.scss";
-        	@import "rh-iconfont/dist/files/rh-iconfont.scss";
-        	```
+    ```
+    @import "rh-iconfont/dist/files/web-iconfont.scss";
+    @import "rh-iconfont/dist/files/rh-iconfont.scss";
+    ```
 
 <br/>
 ### Implementation
