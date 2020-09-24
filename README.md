@@ -1,6 +1,34 @@
-# Welcome to the redhat.com font library!
+# The redhat.com font library has move to [Github](https://github.com/RedHatOfficial/rh-iconfont)!
 
-## Development
+Migrate to [Github](https://github.com/RedHatOfficial/rh-iconfont) by updating the `rh-iconfont` dependency within your project:
+
+```diff
+{
+    "name": "your-project",
+    "dependencies": {
+-       "rh-iconfont": "git+https://gitlab.corp.redhat.com/uxdd/rh-iconfont.git#2.0.0"
++       "rh-iconfont": "git@github.com:RedHatOfficial/rh-iconfont.git#2.0.0"
+    },
+}
+```
+
+Or if you're using the tar file:
+
+```diff
+{
+    "name": "your-project",
+    "dependencies": {
+-       "rh-iconfont": "https://gitlab.corp.redhat.com/uxdd/rh-iconfont/-/archive/4.1.0/rh-iconfont-4.1.0.tar.gz"
++       "rh-iconfont": "https://github.com/RedHatOfficial/rh-iconfont/archive/4.1.0.tar.gz"
+    },
+}
+```
+
+## Issues or questions
+
+Please send an email to [web@redhat.com](mailto:web@redhat.com)
+
+## Deprecated
 
 ### Setup
 
@@ -143,8 +171,3 @@ OR
 ```
 <p class="my-fancy-class web-icon-open-quote">To be, or not to be...</p>
 ```
-
-
-## Issues or questions
-
-Please send an email to [web@redhat.com](mailto:web@redhat.com)
