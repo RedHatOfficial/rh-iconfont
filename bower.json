@@ -1,12 +1,29 @@
 {
   "name": "@redhat/rh-iconfont",
   "version": "4.1.0",
-  "authors": [
-    "Red Hat IT Marketing <it-marketing-tower@redhat.com>"
-  ],
   "description": "The Red Hat Icon Font",
+	"contributors": [{
+		"name": "Mark Caron",
+		"url": "https://github.com/markcaron"
+	  },
+	  {
+		"name": "dcaryll",
+		"url": "https://github.com/dcaryll"
+	  },
+	  {
+		"name": "castastrophe",
+		"url": "https://github.com/castastrophe"
+	  },
+	  {
+		"name": "Kendall Totten",
+		"url": "https://github.com/starryeyez024"
+	  },
+	  {
+		"name": "Shawn Iwinski",
+		"url": "https://github.com/siwinski"
+	}],
   "license": "MIT",
-  "private": true,
+  "private": false,
   "ignore": [
     "**/.*",
     "node_modules",
