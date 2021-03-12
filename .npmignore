@@ -11,6 +11,7 @@ npm-debug.log
 
 # Mac
 .DS_Store
+**/.DS_Store
 
 # Vim
 .vimrc
