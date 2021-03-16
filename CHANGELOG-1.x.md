@@ -1,3 +1,7 @@
+## 4.2.0 (2021-03-16)
+Tag: [4.2.0](https://github.com/RedHatOfficial/rh-iconfont/tags/4.2.0)
+-  fix:  Update web icons that are used in the navigation 
+
 ## 4.1.1 (2020-08-12)
 Tag: [4.1.1](https://github.com/RedHatOfficial/rh-iconfont/tags/4.1.1)
 -  fix:  Update web icons to be larger, for use in the navigation 
