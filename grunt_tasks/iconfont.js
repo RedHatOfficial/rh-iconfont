@@ -7,7 +7,6 @@ module.exports = function (grunt, pkg) {
         dest: 'dist/fonts/rh_icon',
         destCss: 'dist/files/',
         options: {
-          engine: 'node',
           fontFilename: 'rh-iconfont',
           relativeFontPath: '../fonts/rh_icon',
           font: 'rh-iconfont',
@@ -29,7 +28,6 @@ module.exports = function (grunt, pkg) {
         dest: 'dist/fonts/web_icon',
         destCss: 'dist/files/',
         options: {
-          engine: 'node',
           fontFilename: 'rh-web-iconfont',
           relativeFontPath: '../fonts/web_icon',
           font: 'web-iconfont',
