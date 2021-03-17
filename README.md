@@ -1,6 +1,34 @@
 # Welcome to the Red Hat icon font library
 
-## Development
+Migrate to [Github](https://github.com/RedHatOfficial/rh-iconfont) by updating the `rh-iconfont` dependency within your project:
+
+```diff
+{
+    "name": "your-project",
+    "dependencies": {
+-       "rh-iconfont": "git+https://gitlab.corp.redhat.com/uxdd/rh-iconfont.git#2.0.0"
++       "rh-iconfont": "git@github.com:RedHatOfficial/rh-iconfont.git#2.0.0"
+    },
+}
+```
+
+Or if you're using the tar file:
+
+```diff
+{
+    "name": "your-project",
+    "dependencies": {
+-       "rh-iconfont": "https://gitlab.corp.redhat.com/uxdd/rh-iconfont/-/archive/4.1.0/rh-iconfont-4.1.0.tar.gz"
++       "rh-iconfont": "https://github.com/RedHatOfficial/rh-iconfont/archive/4.1.0.tar.gz"
+    },
+}
+```
+
+## Issues or questions
+
+Please send an email to [web@redhat.com](mailto:web@redhat.com)
+
+## Deprecated
 
 ### Setup
 
@@ -24,8 +52,8 @@ Click on an SVG to preview it:
 1. Drop the SVGs into one of the vector folders.
     - Icons specific to Red Hat concepts should have a `rh-` prefix and belong in the `src/iconfont/vectors/rh_icon` folder
     - Universal web interface icons need a `web-` prefix and belong in the `src/iconfont/vectors/web_icon` folder.
-2. Run `grunt` to update the font, or `grunt watcher` to update and preview.
-    - Note: the SVG files are parsed alphabetically, so if you add new icons somewhere besides the bottom of the list, they will cause unicode values to change on existing icons that are alphabetically lower in the list.  This is why we should *never* be calling an icon by it's unicode value via `content`.
+2. Delete the two codepoints map files: `codepoints.rh_web_icon.map` and `codepoints.rh_icon.map`. These will be recreated when you run `grunt` or `grunt watcher`
+3. Run `grunt` to update the font, or `grunt watcher` to update and preview. Be sure to include the codepoints map files in your commit!
 
 ### Creating a tag
 
