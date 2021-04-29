@@ -36,6 +36,8 @@ Please send an email to [web@redhat.com](mailto:web@redhat.com)
 npm install
 ```
 
+<!-- You'll need to install fontforge yourself. -->
+
 Run `npm run build` to compile the repository.
 
 To preview the icons, run `npm run start` and a localhost will spin up.

@@ -30,4 +30,6 @@ gemfile.lock
 __*.scss
 *.css.map
 
+# fontforge
+fontforge
 
