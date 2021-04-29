@@ -1,1 +1,1 @@
-sudo apt update && sudo apt install fontforge
+apt update && apt install fontforge
