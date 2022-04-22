@@ -1,5 +1,5 @@
 ## 4.3.0 (2022-04-20)
-Tag: [4.2.0](https://github.com/RedHatOfficial/rh-iconfont/tags/4.3.0)
+Tag: [4.3.0](https://github.com/RedHatOfficial/rh-iconfont/tags/4.3.0)
 -  fix:  Update 2 icons and add 1 new icon
 
 ## 4.2.0 (2021-03-16)
