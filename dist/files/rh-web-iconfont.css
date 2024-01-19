@@ -1,0 +1,273 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'rh-web-iconfont';
+  src: url("../fonts/web_icon/rh-web-iconfont.eot");
+  src: url("../fonts/web_icon/rh-web-iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/web_icon/rh-web-iconfont.woff") format("woff"), url("../fonts/web_icon/rh-web-iconfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.web-icon:before,
+[class$="web-icon"]:before,
+[class*="web-icon"]:before,
+[class^="web-icon"]:before {
+  font-family: 'rh-web-iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.web-icon-alert-danger:before {
+  content: "";
+}
+
+.web-icon-alert-default:before {
+  content: "";
+}
+
+.web-icon-alert-info:before {
+  content: "";
+}
+
+.web-icon-alert-success:before {
+  content: "";
+}
+
+.web-icon-alert-warning:before {
+  content: "";
+}
+
+.web-icon-arrow-right:before {
+  content: "";
+}
+
+.web-icon-call:before {
+  content: "";
+}
+
+.web-icon-caret-down:before {
+  content: "";
+}
+
+.web-icon-caret-left:before {
+  content: "";
+}
+
+.web-icon-caret-right:before {
+  content: "";
+}
+
+.web-icon-caret-thin-down:before {
+  content: "";
+}
+
+.web-icon-caret-thin-left:before {
+  content: "";
+}
+
+.web-icon-caret-thin-right:before {
+  content: "";
+}
+
+.web-icon-caret-thin-up:before {
+  content: "";
+}
+
+.web-icon-caret-up:before {
+  content: "";
+}
+
+.web-icon-cart:before {
+  content: "";
+}
+
+.web-icon-check:before {
+  content: "";
+}
+
+.web-icon-chevron:before {
+  content: "";
+}
+
+.web-icon-close:before {
+  content: "";
+}
+
+.web-icon-contact:before {
+  content: "";
+}
+
+.web-icon-contact2:before {
+  content: "";
+}
+
+.web-icon-copy:before {
+  content: "";
+}
+
+.web-icon-dashboard:before {
+  content: "";
+}
+
+.web-icon-envelope:before {
+  content: "";
+}
+
+.web-icon-facebook:before {
+  content: "";
+}
+
+.web-icon-fax:before {
+  content: "";
+}
+
+.web-icon-github:before {
+  content: "";
+}
+
+.web-icon-globe:before {
+  content: "";
+}
+
+.web-icon-gplus:before {
+  content: "";
+}
+
+.web-icon-grid-3x3:before {
+  content: "";
+}
+
+.web-icon-grid:before {
+  content: "";
+}
+
+.web-icon-instagram:before {
+  content: "";
+}
+
+.web-icon-key:before {
+  content: "";
+}
+
+.web-icon-laptop:before {
+  content: "";
+}
+
+.web-icon-link:before {
+  content: "";
+}
+
+.web-icon-linkedin:before {
+  content: "";
+}
+
+.web-icon-list-form:before {
+  content: "";
+}
+
+.web-icon-list:before {
+  content: "";
+}
+
+.web-icon-mobile-menu:before {
+  content: "";
+}
+
+.web-icon-new-window:before {
+  content: "";
+}
+
+.web-icon-open-quote:before {
+  content: "";
+}
+
+.web-icon-open:before {
+  content: "";
+}
+
+.web-icon-plus:before {
+  content: "";
+}
+
+.web-icon-print:before {
+  content: "";
+}
+
+.web-icon-reddit:before {
+  content: "";
+}
+
+.web-icon-rss:before {
+  content: "";
+}
+
+.web-icon-search:before {
+  content: "";
+}
+
+.web-icon-tab-arrow:before {
+  content: "";
+}
+
+.web-icon-tumblr:before {
+  content: "";
+}
+
+.web-icon-twitter:before {
+  content: "";
+}
+
+/* Fixes for twitter to X conversion */
+.dms-band.code-comments-nav-shelf .web-icon-twitter:before,
+.dms-band .social-list .text-white .web-icon-twitter:before {
+    content: '';
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path d="m16.78,13.54l6.96-8.09h-1.65l-6.04,7.02-4.82-7.02h-5.56l7.3,10.62-7.3,8.48h1.65l6.38-7.42,5.1,7.42h5.56l-7.57-11.01h0Zm-2.26,2.62l-.74-1.06L7.9,6.69h2.53l4.75,6.79.74,1.06,6.17,8.83h-2.53l-5.03-7.2h0Z" stroke-width="0"/></svg>') center no-repeat;
+}
+.dms-band.code-comments-nav-shelf .text-white .web-icon-twitter:before,
+.dms-band .social-list .text-white .web-icon-twitter:before {
+    background: white;
+}
+.dms-band.code-comments-nav-shelf .social-list a[data-analytics-text="Twitter"]:hover,
+.dms-band .social-list .text-white .web-icon-twitter:hover {
+    border-bottom: 1px solid white;
+}
+/* Fix for twitter to X conversion icons with white BG's and black text */
+.dms-band .social-list .rounded-circle .web-icon-twitter:before,
+.dms-band .oss-social-link.rounded-circle .web-icon-twitter:before {
+    background: black;
+    mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path d="m16.78,13.54l6.96-8.09h-1.65l-6.04,7.02-4.82-7.02h-5.56l7.3,10.62-7.3,8.48h1.65l6.38-7.42,5.1,7.42h5.56l-7.57-11.01h0Zm-2.26,2.62l-.74-1.06L7.9,6.69h2.53l4.75,6.79.74,1.06,6.17,8.83h-2.53l-5.03-7.2h0Z" stroke-width="0"/></svg>') center no-repeat;
+    height: 11px;
+    width: 11px;
+    position: relative;
+    top: -1px;
+    font-size: 11px
+}
+.dms-band .social-list .rounded-circle .web-icon-twitter:hover:before,
+.dms-band .oss-social-link.rounded-circle .web-icon-twitter:hover:before {
+    background: gray;
+}
+/* End fixes for twitter to X conversion */
+
+.web-icon-upload:before {
+  content: "";
+}
+
+.web-icon-user:before {
+  content: "";
+}
+
+.web-icon-youtube:before {
+  content: "";
+}
+
+.web-icon-youtube2:before {
+  content: "";
+}
